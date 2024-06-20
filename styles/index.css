@@ -9,6 +9,9 @@
     list-style: none;
     text-decoration: none;
 }
+#main-section {
+    height: 100vh;
+}
 
 nav {
     display: flex;
@@ -19,13 +22,21 @@ nav {
 
 #navlist-one {
     height: 9.5vh;
+    position: relative; /* Ensure proper context for sticky positioning */
 }
 
 #navlist-two {
-    height: 7.5vh;
+    height: 6vh;
+    width: 100vw;
     background-color: transparent;
     margin-top: 10px;
     backdrop-filter: blur(20px);
+    position: sticky;
+    top: 0px;
+    z-index: 10;
+    margin-top: 2vh;
+    padding-top: 2vh;
+    margin-bottom: 2vh;
 }
 
 .brand {
@@ -61,12 +72,18 @@ nav ul a {
     display: inline-flex;
     align-items: center;
     margin-left: 2vw;
+    position: sticky;
+    top: 0px; /* Ensure sticky positioning */
 }
 
 #last-nav-element {
     display: inline-flex;
     align-items: center;
     margin-left: 2vw;
+}
+
+.current-page {
+    color: #9e9e9e;
 }
 
 ul li a:hover {
@@ -94,14 +111,16 @@ i {
     margin-top: -1vw;
 }
 
-#navlist-two ul li a{
+#navlist-two ul li a {
     margin-left: 2vw;
     font-size: 14.5px;
 }
 
 .hero-section {
+    flex: 1;
     width: 55vw;
 }
+
 .hero-section h1 {
     font-size: 90px;
     font-weight: 700;
@@ -157,4 +176,8 @@ i {
     100% {
         transform: translateX(-100%);
     }
+}
+
+#skills-section {
+    height: 100vh;
 }
