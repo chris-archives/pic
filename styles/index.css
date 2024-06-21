@@ -26,7 +26,7 @@ nav {
 }
 
 #navlist-two {
-    height: 6vh;
+    height: 10vh;
     width: 100vw;
     background-color: transparent;
     margin-top: 10px;
@@ -125,7 +125,7 @@ i {
     font-size: 90px;
     font-weight: 700;
     margin-left: 7vw;
-    margin-top: 40px;
+    margin-top: 20px;
     line-height: 70px;
     width: 70vw;
 }
@@ -180,4 +180,85 @@ i {
 
 #skills-section {
     height: 100vh;
+    margin: 3vh;
 }
+
+.image-display {
+    margin-left: 20px;
+    margin-right: 50px;
+}
+
+.img1 {
+    position: absolute;
+    top: 115vh;
+    height: 42vh;
+    width: 35vw;
+    border-radius: 16px;
+    max-width: 100%;
+    transition: all 0.3s ease;
+}
+
+.img2 {
+    position: absolute;
+    top: 165vh;
+    height: 42vh;
+    width: 35vw;
+    border-radius: 16px;
+    max-width: 100%;
+    z-index: 1;
+    transition: all 0.3s ease;
+}
+
+.img3 {
+    position: absolute;
+    top: 110vh;
+    left: 62vw;
+    height: 42vh;
+    width: 35vw;
+    border-radius: 16px;
+    max-width: 100%;
+    z-index: 10;
+    transition: all 0.3s ease;
+}
+
+.img4 {
+    position: absolute;
+    top: 100vh;
+    left: 37vw;
+    height: 60vh;
+    width: 28vw;
+    border-radius: 16px;
+    max-width: 100%;
+    transition: all 0.3s ease;
+}
+
+.img5 {
+    position: absolute;
+    top: 170vh;
+    left: 35vw;
+    height: 45vh;
+    width: 38vw;
+    border-radius: 16px;
+    margin-left: 20px;
+    max-width: 100%;
+    z-index: 2;
+    transition: all 0.3s ease;
+}
+
+.img6 {
+    position: absolute;
+    top: 147vh;
+    left: 73vw;
+    height: 65vh;
+    width: 22vw;
+    border-radius: 16px;
+    max-width: 100%;
+    z-index:3;
+    transition: all 0.3s ease;
+}
+
+.image-display img:hover {
+    transform: scale(1.05);
+    z-index: 10;
+}
+
