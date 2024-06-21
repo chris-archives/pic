@@ -178,7 +178,7 @@ i {
     }
 }
 
-#skills-section {
+#examples {
     height: 100vh;
     margin: 3vh;
 }
@@ -187,7 +187,7 @@ i {
     margin-left: 12px;
 }
 
-.img1 {
+#img1 {
     position: absolute;
     top: 123vh;
     height: 38vh;
@@ -197,7 +197,7 @@ i {
     transition: all 0.3s ease;
 }
 
-.img2 {
+#img2 {
     position: absolute;
     top: 178vh;
     left: 71.5vw;
@@ -209,7 +209,7 @@ i {
     transition: all 0.3s ease;
 }
 
-.img3 {
+#img3 {
     position: absolute;
     top: 178vh;
     height: 38vh;
@@ -220,7 +220,7 @@ i {
     transition: all 0.3s ease;
 }
 
-.img4 {
+#img4 {
     position: absolute;
     top: 171vh;
     left: 55vw;
@@ -232,7 +232,7 @@ i {
     transition: all 0.3s ease;
 }
 
-.img5 {
+#img5 {
     position: absolute;
     top: 185vh;
     left: 26vw;
@@ -245,7 +245,7 @@ i {
     transition: all 0.3s ease;
 }
 
-.img6 {
+#img6 {
     position: absolute;
     top: 103vh;
     left: 28vw;
@@ -257,7 +257,7 @@ i {
     transition: all 0.3s ease;
 }
 
-.img7 {
+#img7 {
     position: absolute;
     top: 113vh;
     left: 45vw;
@@ -269,7 +269,7 @@ i {
     transition: all 0.3s ease;
 }
 
-.img8 {
+#img8 {
     position: absolute;
     top: 123vh;
     left: 67.5vw;
