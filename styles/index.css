@@ -184,15 +184,14 @@ i {
 }
 
 .image-display {
-    margin-left: 20px;
-    margin-right: 50px;
+    margin-left: 12px;
 }
 
 .img1 {
     position: absolute;
-    top: 115vh;
-    height: 42vh;
-    width: 35vw;
+    top: 123vh;
+    height: 38vh;
+    width: 30vw;
     border-radius: 16px;
     max-width: 100%;
     transition: all 0.3s ease;
@@ -200,44 +199,45 @@ i {
 
 .img2 {
     position: absolute;
-    top: 165vh;
-    height: 42vh;
-    width: 35vw;
+    top: 178vh;
+    left: 72vw;
+    height: 38vh;
+    width: 26vw;
+    border-radius: 16px;
+    max-width: 100%;
+    z-index: 4;
+    transition: all 0.3s ease;
+}
+
+.img3 {
+    position: absolute;
+    top: 178vh;
+    height: 38vh;
+    width: 32vw;
     border-radius: 16px;
     max-width: 100%;
     z-index: 1;
     transition: all 0.3s ease;
 }
 
-.img3 {
-    position: absolute;
-    top: 110vh;
-    left: 62vw;
-    height: 42vh;
-    width: 35vw;
-    border-radius: 16px;
-    max-width: 100%;
-    z-index: 10;
-    transition: all 0.3s ease;
-}
-
 .img4 {
     position: absolute;
-    top: 100vh;
-    left: 37vw;
-    height: 60vh;
-    width: 28vw;
+    top: 171vh;
+    left: 55vw;
+    height: 52vh;
+    width: 22vw;
     border-radius: 16px;
     max-width: 100%;
+    z-index: 3;
     transition: all 0.3s ease;
 }
 
 .img5 {
     position: absolute;
-    top: 170vh;
-    left: 35vw;
-    height: 45vh;
-    width: 38vw;
+    top: 185vh;
+    left: 26vw;
+    height: 40vh;
+    width: 32vw;
     border-radius: 16px;
     margin-left: 20px;
     max-width: 100%;
@@ -247,8 +247,8 @@ i {
 
 .img6 {
     position: absolute;
-    top: 147vh;
-    left: 73vw;
+    top: 103vh;
+    left: 28vw;
     height: 65vh;
     width: 22vw;
     border-radius: 16px;
@@ -257,8 +257,32 @@ i {
     transition: all 0.3s ease;
 }
 
+.img7 {
+    position: absolute;
+    top: 113vh;
+    left: 45vw;
+    height: 45vh;
+    width: 28vw;
+    border-radius: 16px;
+    max-width: 100%;
+    z-index:3;
+    transition: all 0.3s ease;
+}
+
+.img8 {
+    position: absolute;
+    top: 123vh;
+    left: 68vw;
+    height: 38vh;
+    width: 30vw;
+    border-radius: 16px;
+    max-width: 100%;
+    transition: all 0.3s ease;
+}
+
+
 .image-display img:hover {
     transform: scale(1.05);
-    z-index: 10;
+    z-index: 11;
 }
 
