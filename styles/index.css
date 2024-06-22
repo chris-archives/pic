@@ -9,6 +9,7 @@
     list-style: none;
     text-decoration: none;
 }
+
 #main-section {
     height: 85vh;
 }
@@ -28,7 +29,7 @@ nav {
 #navlist-two {
     height: 10vh;
     width: 100vw;
-    background-color: transparent;
+    background-color: rgba(255,255,255,0.5);
     margin-top: 10px;
     backdrop-filter: blur(20px);
     position: sticky;
@@ -171,9 +172,9 @@ i {
     background-color: transparent;
 }
 
-#examples {
-    height: 100vh;
-    margin: 3vh;
+#intro-skill-section {
+    height: 120vh;
+    width: 100vw;
 }
 
 .image-display {
@@ -188,6 +189,7 @@ i {
     border-radius: 16px;
     max-width: 100%;
     transition: all 0.3s ease;
+    margin-left: 20px
 }
 
 #img2 {
@@ -204,6 +206,7 @@ i {
 
 #img3 {
     position: absolute;
+    margin-left: 20px;
     top: 178vh;
     height: 38vh;
     width: 32vw;
@@ -273,8 +276,248 @@ i {
     transition: all 0.3s ease;
 }
 
-
 .image-display img:hover {
     transform: scale(1.05);
 }
+
+#skills-section {
+    height: 218vh;
+    overflow-y: hidden;
+}
+
+#skills-section h1 {
+    font-size: 80px;
+    font-weight: 700;
+    margin-left: 7vw;
+    margin-top: 20px;
+    line-height: 70px;
+    width: 70vw;
+    position: absolute;
+    top: 255vh;
+}
+
+#skills-section p {
+    position: absolute;
+    top: 278vh;
+    width: 60vw;
+    margin-top: 20px;
+    margin-left: 7vw;
+    font-size: 25px;
+    color: #a2a2a2;
+    line-height: 28px;
+    font-family: sans-serif;
+    font-weight: 300;
+}
+
+#skills-section h4 {
+    position: absolute;
+    top: 298vh;
+    width: 60vw;
+    margin-top: 13vh;
+    margin-left: 7vw;
+    font-size: 25px;
+    color: #a2a2a2;
+    line-height: 28px;
+    font-family: sans-serif;
+    font-weight: 300;
+}
+
+#skills-section h4:hover {
+    text-decoration: underline;
+}
+
+/*
+
+.design-arrow {
+    width: 20vw; /* Adjust the width of the SVG as needed 
+    height: auto;
+    transform: rotate(90deg);
+    position: absolute;
+}
+
+.design-arrow2 {
+    width: 400px; /* Adjust the width of the SVG as needed 
+    height: auto;
+    transform: rotate(270deg);
+}
+.design-arrow3 {
+    width: 400px; /* Adjust the width of the SVG as needed 
+    height: auto;
+    transform: rotate(90deg);
+}
+
+.design-arrow4 {
+    width: 200px; /* Adjust the width of the SVG as needed 
+    height: auto;
+    transform: rotate(270deg);
+}
+
+.orb {
+    position: absolute;
+    width: 4%;
+    height: 0;
+    padding-bottom: 4%;
+    border-radius: 50%;
+    display: flex;
+    cursor: pointer;
+}
+
+#orb1 {
+    background: radial-gradient(circle, rgba(255,0,0,1) 0%, rgb(221, 3, 3) 50%, rgba(255,99,71,0.5) 100%);
+    box-shadow: 0 0 25px rgba(255, 0, 0, 0.8);
+    animation: spin 5s linear infinite, red-fiery-mist 1s linear infinite;
+    top: 68vh;
+    left: 20vw;
+}
+
+#orb2 {
+    background: radial-gradient(circle, rgb(79, 180, 247) 0%, rgb(5, 133, 253) 60%, rgba(0,128,255,1) 100%);
+    box-shadow: 0 0 15px rgba(0, 128, 255, 0.8);
+    animation: spin 5s linear infinite, blue-fiery-mist 1s linear infinite;
+    top: 58vh;
+    left: 27vw;
+}
+
+#orb3 {
+    background: radial-gradient(circle, rgba(182,255,155,1) 0%, rgba(89,255,114,1) 60%, rgba(38,224,86,1) 100%);
+    box-shadow: 0 0 15px rgba(89, 255, 114, 0.8);
+    animation: spin 5s linear infinite, green-fiery-mist 1s linear infinite;
+    top: 30vh;
+}
+
+#orb4 {
+    background: radial-gradient(circle, rgba(255,182,193,1) 0%, rgba(238,130,238,1) 60%, rgba(255,223,0,1) 100%);
+    box-shadow: 0 0 15px rgba(238, 130, 238, 0.8);
+    animation: spin 5s linear infinite, pink-fiery-mist 1s linear infinite;
+    top: 20vh;
+}
+
+#orb5 {
+    background: radial-gradient(circle, rgba(189,139,255,1) 0%, rgba(105,61,255,1) 60%, rgba(43,0,255,1) 100%);
+    box-shadow: 0 0 15px rgba(105, 61, 255, 0.8);
+    animation: spin 5s linear infinite, purple-fiery-mist 1s linear infinite;
+    top: 10vh;
+}
+
+#orb6 {
+    background: radial-gradient(circle, rgba(255,215,0,1) 0%, rgba(255,223,50,0.8) 50%, rgba(255,235,110,0.6) 100%);
+    box-shadow: 0 0 15px rgba(255, 215, 0, 0.8);
+    animation: spin 5s linear infinite, yellow-mist 1s linear infinite;    
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes green-fiery-mist {
+    0% {
+        box-shadow: 0 0 15px rgba(50, 205, 50, 0.8);
+    }
+    25% {
+        box-shadow: 0 0 30px rgba(50, 205, 50, 0.8), 0 0 60px rgba(154, 205, 50, 0.6), 0 0 90px rgba(34, 139, 34, 0.4);
+    }
+    50% {
+        box-shadow: 0 0 60px rgba(154, 205, 50, 0.6), 0 0 120px rgba(34, 139, 34, 0.4), 0 0 180px rgba(50, 205, 50, 0.2);
+    }
+    75% {
+        box-shadow: 0 0 90px rgba(34, 139, 34, 0.4), 0 0 180px rgba(50, 205, 50, 0.2), 0 0 270px rgba(154, 205, 50, 0.1);
+    }
+    100% {
+        box-shadow: 0 0 120px rgba(50, 205, 50, 0.2), 0 0 240px rgba(34, 139, 34, 0.1), 0 0 360px rgba(154, 205, 50, 0);
+    }
+}
+
+@keyframes blue-fiery-mist {
+    0% {
+        box-shadow: 0 0 15px rgba(70, 130, 180, 0.8);
+    }
+    25% {
+        box-shadow: 0 0 30px rgba(70, 130, 180, 0.8), 0 0 60px rgba(30, 144, 255, 0.6), 0 0 90px rgba(0, 191, 255, 0.4);
+    }
+    50% {
+        box-shadow: 0 0 60px rgba(30, 144, 255, 0.6), 0 0 120px rgba(0, 191, 255, 0.4), 0 0 180px rgba(70, 130, 180, 0.2);
+    }
+    75% {
+        box-shadow: 0 0 90px rgba(0, 191, 255, 0.4), 0 0 180px rgba(70, 130, 180, 0.2), 0 0 270px rgba(30, 144, 255, 0.1);
+    }
+    100% {
+        box-shadow: 0 0 120px rgba(30, 144, 255, 0.2), 0 0 240px rgba(0, 191, 255, 0.1), 0 0 360px rgba(70, 130, 180, 0);
+    }
+}
+
+@keyframes red-fiery-mist {
+    0% {
+        box-shadow: 0 0 15px rgba(255, 69, 0, 0.8);
+    }
+    25% {
+        box-shadow: 0 0 30px rgba(255, 69, 0, 0.8), 0 0 60px rgba(255, 165, 0, 0.6), 0 0 90px rgba(255, 0, 0, 0.4);
+    }
+    50% {
+        box-shadow: 0 0 60px rgba(255, 165, 0, 0.6), 0 0 120px rgba(255, 0, 0, 0.4), 0 0 180px rgba(255, 69, 0, 0.2);
+    }
+    75% {
+        box-shadow: 0 0 90px rgba(255, 0, 0, 0.4), 0 0 180px rgba(255, 69, 0, 0.2), 0 0 270px rgba(255, 165, 0, 0.1);
+    }
+    100% {
+        box-shadow: 0 0 120px rgba(255, 69, 0, 0.2), 0 0 240px rgba(255, 165, 0, 0.1), 0 0 360px rgba(255, 0, 0, 0);
+    }
+}
+
+@keyframes pink-fiery-mist {
+    0% {
+        box-shadow: 0 0 15px rgba(238, 130, 238, 0.8);
+    }
+    25% {
+        box-shadow: 0 0 30px rgba(238, 130, 238, 0.8), 0 0 60px rgba(255, 105, 180, 0.6), 0 0 90px rgba(255, 182, 193, 0.4);
+    }
+    50% {
+        box-shadow: 0 0 60px rgba(255, 105, 180, 0.6), 0 0 120px rgba(255, 182, 193, 0.4), 0 0 180px rgba(238, 130, 238, 0.2);
+    }
+    75% {
+        box-shadow: 0 0 90px rgba(255, 182, 193, 0.4), 0 0 180px rgba(238, 130, 238, 0.2), 0 0 270px rgba(255, 105, 180, 0.1);
+    }
+    100% {
+        box-shadow: 0 0 120px rgba(238, 130, 238, 0.2), 0 0 240px rgba(255, 105, 180, 0.1), 0 0 360px rgba(255, 182, 193, 0);
+    }
+}
+
+@keyframes purple-fiery-mist {
+    0% {
+        box-shadow: 0 0 15px rgba(128, 0, 128, 0.8);
+    }
+    25% {
+        box-shadow: 0 0 30px rgba(128, 0, 128, 0.8), 0 0 60px rgba(148, 0, 211, 0.6), 0 0 90px rgba(186, 85, 211, 0.4);
+    }
+    50% {
+        box-shadow: 0 0 60px rgba(148, 0, 211, 0.6), 0 0 120px rgba(186, 85, 211, 0.4), 0 0 180px rgba(128, 0, 128, 0.2);
+    }
+    75% {
+        box-shadow: 0 0 90px rgba(186, 85, 211, 0.4), 0 0 180px rgba(128, 0, 128, 0.2), 0 0 270px rgba(148, 0, 211, 0.1);
+    }
+    100% {
+        box-shadow: 0 0 120px rgba(128, 0, 128, 0.2), 0 0 240px rgba(148, 0, 211, 0.1), 0 0 360px rgba(186, 85, 211, 0);
+    }
+}
+
+@keyframes yellow-mist {
+    0% {
+        box-shadow: 0 0 30px 15px rgba(255, 215, 0, 0.4);
+    }
+    50% {
+        box-shadow: 0 0 60px 30px rgba(255, 215, 0, 0.1);
+    }
+    100% {
+        box-shadow: 0 0 30px 15px rgba(255, 215, 0, 0.4);
+    }
+}
+
+*/
+
+
+
 
