@@ -159,11 +159,11 @@ i {
     font-weight: 300;
 }
 
-/* Hero section button styling */
+/* Specific styles for hero section buttons */
 .hero-section button {
-    font-family: Roboto;
+    font-family: 'Roboto', sans-serif;
     display: inline-block;
-    color: white;
+    color: white; /* Ensure button text color is white */
     border: 1px solid black;
     background: black;
     padding: 12px 30px;
@@ -177,11 +177,23 @@ i {
     margin-left: 7vw;
 }
 
+/* Ensure link inside button remains white */
+.hero-section button a,
+.hero-section button a:visited {
+    color: white !important; /* Add !important to ensure it overrides other styles */
+}
+
+/* Hover effect */
 .hero-section button:hover {
     background: transparent;
     border: 1px solid rgb(10, 0, 0);
     transform: translateX(10px);
     color: black;
+}
+
+.hero-section button:hover a,
+.hero-section button:hover a:visited {
+    color: black !important; /* Change to black on hover */
 }
 
 /* Contact button specific styles */
@@ -190,12 +202,6 @@ i {
     margin-left: 1.5vw;
     color: black !important;
     background-color: transparent;
-}
-
-/* Ensure visited links inside buttons don't change color */
-.hero-section button a,
-.hero-section button a:visited {
-    color: white !important; /* Or the color you want the button text to be */
 }
 
 #contact-button a,
