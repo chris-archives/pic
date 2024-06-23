@@ -104,7 +104,7 @@ ul li a:hover {
 
 /* Hover styles for contact button */
 .contact-button:hover {
-    color: black;
+    color: black !important;
 }
 
 /* Icon styles */
@@ -188,19 +188,19 @@ i {
 #contact-button {
     border: 1px solid rgb(4, 1, 1);
     margin-left: 1.5vw;
-    color: black;
+    color: black !important;
     background-color: transparent;
 }
 
 /* Ensure visited links inside buttons don't change color */
 .hero-section button a,
 .hero-section button a:visited {
-    color: white; /* Or the color you want the button text to be */
+    color: white !important; /* Or the color you want the button text to be */
 }
 
 #contact-button a,
 #contact-button a:visited {
-    color: black; /* Or the color you want the button text to be */
+    color: black !important; /* Or the color you want the button text to be */
 }
 
 /* Intro skill section styling */
