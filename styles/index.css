@@ -183,17 +183,17 @@ i {
     color: white !important; /* Add !important to ensure it overrides other styles */
 }
 
+.hero-section button:hover a,
+.hero-section button:hover a:visited {
+    color: black !important; /* Change link color to black on hover */
+}
+
 /* Hover effect */
 .hero-section button:hover {
     background: transparent;
     border: 1px solid rgb(10, 0, 0);
     transform: translateX(10px);
     color: black;
-}
-
-.hero-section button:hover a,
-.hero-section button:hover a:visited {
-    color: black !important; /* Change to black on hover */
 }
 
 /* Contact button specific styles */
