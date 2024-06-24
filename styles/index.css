@@ -401,3 +401,15 @@ i {
 .banner .slider .item img:hover{
     transform: scale(1.1);
 }
+
+.tree-img {
+    position: relative;
+    top: 12vh;
+    padding: 0;
+    margin: 0;
+    height: 88vh;
+    width: auto;
+    max-width: 75%;
+    z-index: -1;
+
+}
