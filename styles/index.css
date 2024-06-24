@@ -411,5 +411,32 @@ i {
     width: auto;
     max-width: 75%;
     z-index: -1;
+}
 
+.design-arrow {
+    width: 20vw; /* Adjust the width of the SVG as needed */
+    height: auto;
+    transform: rotate(90deg);
+    position: absolute;
+}
+
+.design-arrow2 {
+    width: 400px; /* Adjust the width of the SVG as needed */
+    height: auto;
+    transform: rotate(270deg);
+}
+.design-arrow3 {
+    width: 400px; /* Adjust the width of the SVG as needed */
+    height: auto;
+    transform: rotate(90deg);
+}
+
+.design-arrow4 {
+    width: 200px; /* Adjust the width of the SVG as needed */
+    height: auto;
+    transform: rotate(270deg);
+}
+
+#description {
+    background-color: black !important;
 }
