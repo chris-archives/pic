@@ -313,7 +313,6 @@ i {
     transition: transform 1s ease;
 }
 
-
 /* Skills section styling */
 #skills-section {
     height: 115vh;
@@ -358,6 +357,19 @@ i {
 
 #skills-section h4:hover {
     text-decoration: underline;
+}
+
+.translateUp1 {
+    animation: slideUp 1s ease forwards;
+}
+
+@keyframes slideUp {
+    from {
+        transform: translateY(100vh);
+    }
+    to {
+        transform: translateY(0px);
+    }
 }
 
 /* rotating banner styles */
