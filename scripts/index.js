@@ -1,4 +1,4 @@
-document.addEventListener("DOMContentLoaded", function() {
+    //IntersectionObserver for the topImages
     const observer = new IntersectionObserver((entries) => {
         entries.forEach((entry) => {
             console.log('Entry:', entry);
@@ -9,17 +9,15 @@ document.addEventListener("DOMContentLoaded", function() {
             }
         });
     }, {
-        root: null, // Use the viewport as the root
+        root: null,
         rootMargin: '0px',
-        threshold: 0.5 // Adjusted threshold for testing
+        threshold: 0.5
     });
 
-    // Select the target element(s)
     const topImages = document.querySelectorAll('.top');
     topImages.forEach((el) => observer.observe(el));
-});
 
-
+    //IntersectionObserver for the bottomImages
 const secondObserver = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
         console.log('Entry:', entry);
@@ -30,9 +28,9 @@ const secondObserver = new IntersectionObserver((entries) => {
         }
     });
 }, {
-    root: null, // Use the viewport as the root
+    root: null,
     rootMargin: '0px',
-    threshold: 0.3 // Adjusted threshold for testing
+    threshold: 0.3
 });
     const bottomImages = document.querySelectorAll('.bottom');
     bottomImages.forEach((el) => secondObserver.observe(el));
