@@ -229,7 +229,7 @@ i {
 #img1, #img2, #img3, #img4, #img5, #img6, #img7, #img8 {
     border-radius: 16px;
     max-width: 100%;
-    transition: all 0.3s ease;
+    transition: all 1s ease;
 }
 
 #img1 {
@@ -303,9 +303,16 @@ i {
     width: 30vw;
 }
 
-.image-display img:hover {
-    transform: scale(1.05);
+.translateDown {
+    transform: translateY(50px);
+    transition: transform 1s ease;
 }
+
+.translateUp {
+    transform: translateY(-50px);
+    transition: transform 1s ease;
+}
+
 
 /* Skills section styling */
 #skills-section {
