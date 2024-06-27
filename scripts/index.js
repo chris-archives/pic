@@ -35,19 +35,28 @@ document.addEventListener("DOMContentLoaded", function() {
     const bottomImages = document.querySelectorAll('.bottom');
     bottomImages.forEach((el) => secondObserver.observe(el));
 
-        // IntersectionObserver for the skillsAreaText
-        const thirdObserver = new IntersectionObserver((entries) => {
-            entries.forEach((entry) => {
-                console.log('Entry:', entry); // Add this line for debugging
-                if (entry.isIntersecting) {
-                    entry.target.classList.add('translateUp1');
-                }
-            });
-        }, {
-            root: null,
-            threshold: 0.1
+    // IntersectionObserver for the skillsAreaText
+    const thirdObserver = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+                const elements = entry.target.querySelectorAll('.skills-text');
+                elements.forEach((el, index) => {
+                    el.style.transitionDelay = `${index * 0.2}s`;
+                    el.classList.add('animate');
+                });
+            } else {
+                const elements = entry.target.querySelectorAll('.skills-text');
+                elements.forEach((el) => {
+                    el.classList.remove('animate');
+                    el.style.transitionDelay = '0s';
+                });
+            }
         });
-    
-        const skillsAreaText = document.querySelectorAll('.skills-text');
-        skillsAreaText.forEach((el) => thirdObserver.observe(el));
+    }, {
+        root: null,
+        threshold: 0.1
+    });
+
+    const skillsSection = document.querySelectorAll('#skills-section');
+    skillsSection.forEach((el) => thirdObserver.observe(el));
 });

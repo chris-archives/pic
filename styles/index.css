@@ -359,17 +359,15 @@ i {
     text-decoration: underline;
 }
 
-.translateUp1 {
-    animation: slideUp 1s ease forwards;
+.skills-text {
+    opacity: 0;
+    transform: translateY(300px);
+    transition: transform 1s ease, opacity 1s ease;
 }
 
-@keyframes slideUp {
-    from {
-        transform: translateY(100vh);
-    }
-    to {
-        transform: translateY(0px);
-    }
+.skills-text.animate {
+    opacity: 1;
+    transform: translateY(0);
 }
 
 /* rotating banner styles */
