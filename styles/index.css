@@ -373,6 +373,11 @@ i {
 
 }
 
+.banner.lazy-load {
+    opacity: 1;
+    transition: opacity 1s ease;
+}
+
 /* rotating banner styles */
 .banner {
     width: 100%;
@@ -380,6 +385,8 @@ i {
     text-align: center;
     overflow: hidden;
     position: relative;
+    opacity: 0;
+    transition: opacity 1s ease;
 }
 
 .banner .slider {
