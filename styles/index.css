@@ -441,32 +441,68 @@ i {
     z-index: -1;
 }
 
+.roots-img {
+    height: 170vh;
+    width: 100%;
+    max-width: 95%;
+    margin-top: -32vh;
+    position: relative;
+    left: 2.5vw;
+}
+
 .design-arrow {
-    width: 20vw;
-    height: auto;
+    width: 200px;
+    height: 300px;
     transform: rotate(90deg);
     position: absolute;
+    top: -430px;
+    right: -25px;
 }
 
 /*Description Section */
 .design-arrow2 {
-    width: 400px;
-    height: auto;
+    width: 500px;
+    height: 500px;
     transform: rotate(270deg);
+    position: absolute;
+    top: -264px;
+    left: -93px;
 }
 
 .design-arrow3 {
-    width: 400px;
-    height: auto;
+    width: 500px;
+    height: 500px;
     transform: rotate(90deg);
+    position: absolute;
+    top: 230px;
+    right: 85px;
 }
 
 .design-arrow4 {
     width: 200px;
     height: auto;
     transform: rotate(270deg);
+    position: absolute;
+    top: 800px;
+    right: -10px;
+
 }
 
 #description {
-    background-color: black !important;
+    background-color: black;
+    z-index: -3;
+    padding: 50px 0;
+    display: flex;
+    align-items: center;
+    position: relative;
+    flex-direction: column;
+    height: 700vh;
 }
+
+.arrow-container {
+    position: relative;
+    display: grid;
+}
+
+
+
