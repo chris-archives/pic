@@ -78,5 +78,21 @@ document.addEventListener("DOMContentLoaded", function() {
     const banners = document.querySelectorAll('.banner');
     banners.forEach((el) => bannerObserver.observe(el));
 
-    // Another IntersectionObserver for overlay/banner visibility
+    // IntersectionObserver for SVG arrow and description section visibility
+    const descriptionObserver = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('animate');
+            } else {
+                entry.target.classList.remove('animate');
+            }
+        });
+    }, {
+        root: null,
+        rootMargin: '0px',
+        threshold: 0.1
+    });
+
+    const fadeTrigger = document.querySelectorAll('.fade-trigger');
+    fadeTrigger.forEach((el) => descriptionObserver.observe(el));
 });
