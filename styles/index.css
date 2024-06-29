@@ -452,29 +452,32 @@ i {
     margin-top: -32vh;
     position: relative;
     left: 2.5vw;
-}
-/*
-.fade-trigger {
-    width: 100vw;
-    height: 400vh;
-    background-color: black;
-    position: absolute;
-    top: -1px;
-    z-index: 10;
-    transform: translateY(0px);
-    transition: transform 1s linear;
+    opacity: 0;
+    transition: opacity 1s ease;
 }
 
-.fade-trigger.animate {
-    transform: translateY(500vh);
+.roots-img.animate {
+    opacity: 1;
+    transition: opacity 1s ease;
 }
-*/
+
+.fade-trigger {
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+    position: absolute;
+    top: 690px;
+    z-index: 5;
+    transform: translateY(0px);
+    transition: filter 0.3s ease;
+}
+
 #design-arrow1 {
     width: 200px;
     height: 300px;
     transform: rotate(90deg);
     position: absolute;
-    top: -430px;
+    top: -365px;
     right: -25px;
 }
 
@@ -483,7 +486,7 @@ i {
     height: 400px;
     transform: rotate(270deg);
     position: absolute;
-    top: -200px;
+    top: -135px;
     left: -118px;
 }
 
@@ -492,7 +495,7 @@ i {
     height: 400px;
     transform: rotate(90deg);
     position: absolute;
-    top: 98px;
+    top: 163px;
     left: -415px;
 }
 
@@ -501,7 +504,7 @@ i {
     height: auto;
     transform: rotate(270deg);
     position: absolute;
-    top: 451px;
+    top: 516px;
     right: -150px;
 }
 
@@ -509,7 +512,7 @@ i {
     position: absolute;
     width: 190px;
     height: auto;
-    top: 655px;
+    top: 720px;
     left: -134px;
 
 }
@@ -523,6 +526,7 @@ i {
     position: relative;
     flex-direction: column;
     height: 325vh;
+    overflow-y: hidden;
 }
 
 .arrow-container {

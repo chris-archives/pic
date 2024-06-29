@@ -1,3 +1,6 @@
+// Registering ScrollTrigger plugin from GSAP
+gsap.registerPlugin(ScrollTrigger);
+
 document.addEventListener("DOMContentLoaded", function() {
     // IntersectionObserver for the topImages
     const topObserver = new IntersectionObserver((entries) => {
@@ -78,8 +81,8 @@ document.addEventListener("DOMContentLoaded", function() {
     const banners = document.querySelectorAll('.banner');
     banners.forEach((el) => bannerObserver.observe(el));
 
-    // IntersectionObserver for SVG arrow and description section visibility
-    const descriptionObserver = new IntersectionObserver((entries) => {
+    // IntersectionObserver for Root Image
+    const rootImgObserver = new IntersectionObserver((entries) => {
         entries.forEach((entry) => {
             if (entry.isIntersecting) {
                 entry.target.classList.add('animate');
@@ -93,6 +96,17 @@ document.addEventListener("DOMContentLoaded", function() {
         threshold: 0.1
     });
 
-    const fadeTrigger = document.querySelectorAll('.fade-trigger');
-    fadeTrigger.forEach((el) => descriptionObserver.observe(el));
+    const rootImg = document.querySelectorAll('.roots-img');
+    rootImg.forEach((el) => rootImgObserver.observe(el));
+
+    // GSAP ScrollTrigger animation for Description section's .fade-trigger
+    let tween = gsap.to('.fade-trigger', {
+        scrollTrigger: {
+            start: 'top 70%',
+            trigger: '.fade-trigger',
+            scrub: 0.5,
+            end: '+=300%',
+            pin: true,
+        }
+    });
 });
