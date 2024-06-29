@@ -100,13 +100,16 @@ document.addEventListener("DOMContentLoaded", function() {
     rootImg.forEach((el) => rootImgObserver.observe(el));
 
     // GSAP ScrollTrigger animation for Description section's .fade-trigger
-    let tween = gsap.to('.fade-trigger', {
+    gsap.to('.fade-trigger', {
         scrollTrigger: {
             start: 'top 70%',
             trigger: '.fade-trigger',
-            scrub: 0.5,
+            scrub: 1,
             end: '+=300%',
             pin: true,
         }
     });
+
+    // GSAP ScrollTrigger to trigger fade out effect
+
 });
