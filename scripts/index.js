@@ -140,6 +140,28 @@ document.addEventListener("DOMContentLoaded", function() {
         animation: buttonsAnimation,
     });
 
+    //GSA{ button's writing's animations
+    const buttonSpanAnimation = gsap.to('.side-final-button span', {
+        fontSize: '20px',
+        fontFamily: 'sans-serif',
+        fontWeight: '700',
+        opacity: "1",
+        color: '#ffff'
+    })
+
+    ScrollTrigger.create({
+        trigger: '.side-final-button span',
+        scrub: 1,
+        animation: buttonSpanAnimation,
+        onUpdate: self => {
+            if (self.direction === 1) {
+                buttonSpanAnimation.play();
+            } else {
+                buttonSpanAnimation.reverse();
+            }
+        },
+    });
+
     // GSAP Animation for HTML button
     const htmlButtonAnimation = gsap.to('#window-close #html', {
         duration: 1,

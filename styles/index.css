@@ -563,19 +563,20 @@ i {
     border-radius: 50%;
 }
 
-#window-close div span {
+.side-final-button span {
+    opacity: 0;
+}
+
+#window-close #creativity-writing {
+    color: #2f2d2d;
+    opacity: 1;
     font-size: 20px;
     font-family: sans-serif;
     font-weight: 700;
-    color: #ffff;
 }
 
 /* Specific styles for creativity section */
 #creativity {
     z-index: 2;
     background-color: #fefefe;
-}
-
-#window-close #creativity span {
-    color: #1c1b1bd7;
 }
