@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap');
-
+@font-face{font-family:"SF Pro Bold";src:url("../app/fonts/sf-pro/SF-Pro-Text-Bold.otf")}
 /* Variables */
 :root {
     --quantity: 8;
@@ -537,7 +536,7 @@ i {
     align-items: center;
     position: relative;
     flex-direction: column;
-    height: 340vh;
+    height: 345vh;
     overflow-y: hidden;
 }
 
@@ -546,5 +545,65 @@ i {
     display: grid;
 }
 
+#window-close div {
+    width: 195px;
+    height: 90px;
+    position: absolute;
+    top: 735vh;
+    left: 41.5vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50px;
+    letter-spacing: 0.5px;
+}
 
+#window-close div span{
+    font-size: 20px;
+    font-family: sans-serif;
+    font-weight: 700;
+    color: #ffff;
+}
 
+#creativity {
+    z-index: 2;
+    background-color: #fefefe;
+}
+
+#window-close #creativity span{
+    color: #1c1b1bd7;
+}
+
+#window-close #html {
+    background-color: blue;
+    left: 26.5vw;
+}
+
+#window-close #css {
+    left: 56.5vw;
+    background-color: blue;
+}
+
+#window-close #javascript {
+    top: 720vh;
+    left: 34vw;
+    background-color: blue;
+}
+
+#window-close #business {
+    top: 720vh;
+    left: 49vw;
+    background-color: blue;
+}
+
+#window-close #techinnovation {
+    top: 750vh;
+    left: 49vw;
+    background-color: blue;
+}
+
+#window-close #uiux {
+    top: 750vh;
+    left: 34vw;
+    background-color: blue;
+}
