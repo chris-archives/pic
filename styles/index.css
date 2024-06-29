@@ -263,7 +263,7 @@ i {
 
 #img4 {
     position: absolute;
-    top: 171vh;
+    top: 173vh;
     left: 55vw;
     height: 52vh;
     width: 22vw;
@@ -554,8 +554,11 @@ i {
     display: flex;
     align-items: center;
     justify-content: center;
-    border-radius: 50px;
     letter-spacing: 0.5px;
+    visibility: hidden;
+    opacity: 0;
+    transform: scale(0.5);
+    border-radius: 50%;
 }
 
 #window-close div span{
@@ -574,36 +577,13 @@ i {
     color: #1c1b1bd7;
 }
 
-#window-close #html {
-    background-color: blue;
-    left: 26.5vw;
-}
+/*
 
-#window-close #css {
-    left: 56.5vw;
-    background-color: blue;
-}
-
-#window-close #javascript {
-    top: 720vh;
-    left: 34vw;
-    background-color: blue;
-}
-
-#window-close #business {
-    top: 720vh;
-    left: 49vw;
-    background-color: blue;
-}
-
-#window-close #techinnovation {
-    top: 750vh;
-    left: 49vw;
-    background-color: blue;
-}
 
 #window-close #uiux {
     top: 750vh;
     left: 34vw;
-    background-color: blue;
+    background: linear-gradient(to right, #f297c5, #950bea);
+    box-shadow: 15px 15px 100px 5px rgb(245, 126, 219)
 }
+*/
