@@ -245,7 +245,7 @@ i {
 
 #img2 {
     position: absolute;
-    top: 178vh;
+    top: 180vh;
     left: 71.5vw;
     height: 38vh;
     width: 26vw;
@@ -255,7 +255,7 @@ i {
 #img3 {
     position: absolute;
     margin-left: 20px;
-    top: 178vh;
+    top: 180vh;
     height: 38vh;
     width: 32vw;
     z-index: 1;
@@ -272,7 +272,7 @@ i {
 
 #img5 {
     position: absolute;
-    top: 183.5vh;
+    top: 185vh;
     left: 26vw;
     height: 40vh;
     width: 32vw;
