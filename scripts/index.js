@@ -102,14 +102,26 @@ document.addEventListener("DOMContentLoaded", function() {
     // GSAP ScrollTrigger animation for Description section's .fade-trigger
     gsap.to('.fade-trigger', {
         scrollTrigger: {
-            start: 'top 70%',
             trigger: '.fade-trigger',
-            scrub: 1,
+            start: 'top 70%',
             end: '+=300%',
+            scrub: 1,
             pin: true,
         }
     });
 
-    // GSAP ScrollTrigger to trigger fade out effect
+    // GSAP Animation for fading out .fade-out-trigger
+    const fadeOutAnimation = gsap.to('.fade-out-trigger', {
+        opacity: 2,
+        ease: 'power1.in',
+        duration: 2,
+    });
 
+    // GSAP ScrollTrigger to trigger fading out .fade-out-trigger
+    ScrollTrigger.create({
+        trigger: '.fade-out-trigger',
+        start: 'bottom bottom',
+        scrub: 1,
+        animation: fadeOutAnimation,
+    });
 });
