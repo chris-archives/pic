@@ -2,6 +2,24 @@
 gsap.registerPlugin(ScrollTrigger);
 
 document.addEventListener("DOMContentLoaded", function() {
+    //IntersectionObserver for Main
+    const mainPageObserver = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('animate');
+            } else {
+                entry.target.classList.remove('animate');
+            }
+            });
+    }, {
+        root: null,
+        rootMargin: '0px',
+        threshold: 0.1
+    });
+
+    const mainPage = document.querySelectorAll('#main-section');
+    mainPage.forEach((el) => mainPageObserver.observe(el));
+
     // IntersectionObserver for the topImages
     const topObserver = new IntersectionObserver((entries) => {
         entries.forEach((entry) => {
