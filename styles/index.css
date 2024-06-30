@@ -23,8 +23,8 @@ body {
 #main-section {
     height: 85vh;
     opacity: 0;
-    transition: opacity 1s ease;
     filter: blur(5px);
+    transition: opacity 1s ease, filter 0.5s ease;
 }
 
 #main-section.animate {
