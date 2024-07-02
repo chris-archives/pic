@@ -11,7 +11,7 @@
 
 /* Body styles */
 body {
-    overflow-x: hidden;
+    overflow-y: hidden;
 }
 
 /* Main section height */
@@ -25,26 +25,17 @@ nav {
     align-items: center;
     background-color: #f6f6f6;
     padding: 0 9vw;
+    backdrop-filter: blur(20px);
+    background-color: transparent;
+    background-image: linear-gradient(
+        120deg, rgba(255,255,255,0.2) 20%, rgba(0, 0, 0, 0.3)
+    );
 }
 
 /* First nav specific styles */
 #navlist-one {
     height: 9.5vh;
     position: relative; /* Ensure proper context for sticky positioning */
-}
-
-/* Second nav specific styles */
-#navlist-two {
-    height: 10vh;
-    width: 100vw;
-    background-color: rgba(255, 255, 255, 0.6);
-    margin-top: 10px;
-    backdrop-filter: blur(20px);
-    position: sticky;
-    top: 0;
-    z-index: 10;
-    padding-top: 2vh;
-    margin-bottom: 2vh;
 }
 
 /* Brand styling */
@@ -76,7 +67,7 @@ nav ul a {
 .contact-button {
     padding: 14px 30px;
     color: black;
-    background-color: white;
+    background-color: #c7c6c6;
     backdrop-filter: blur(25px);
     text-decoration: none;
     border-radius: 22px;
@@ -85,8 +76,7 @@ nav ul a {
     display: inline-flex;
     align-items: center;
     margin-left: 2vw;
-    position: sticky;
-    top: 0; /* Ensure sticky positioning */
+    opacity: 0.6;
 }
 
 /* Last nav element styles */
@@ -118,4 +108,18 @@ i {
     display: flex;
     align-items: center;
     margin-left: -1vw;
+}
+
+#myVideo {
+    width: 100vw;
+    height: 100vh;
+    max-width: 100%;
+    object-fit: cover;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: -1;
+    filter: brightness(55%);
 }
