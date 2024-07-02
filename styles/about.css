@@ -1,0 +1,121 @@
+/* Reset default styles */
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+/* Body styles */
+body {
+    overflow-x: hidden;
+}
+
+/* Main section height */
+#main-section {
+    height: 85vh;
+}
+
+/* General nav styles */
+nav {
+    display: flex;
+    align-items: center;
+    background-color: #f6f6f6;
+    padding: 0 9vw;
+}
+
+/* First nav specific styles */
+#navlist-one {
+    height: 9.5vh;
+    position: relative; /* Ensure proper context for sticky positioning */
+}
+
+/* Second nav specific styles */
+#navlist-two {
+    height: 10vh;
+    width: 100vw;
+    background-color: rgba(255, 255, 255, 0.6);
+    margin-top: 10px;
+    backdrop-filter: blur(20px);
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    padding-top: 2vh;
+    margin-bottom: 2vh;
+}
+
+/* Brand styling */
+.brand {
+    color: black;
+    margin-left: -2vw;
+    font-weight: 700;
+    font-size: 23px;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* General ul styles */
+ul {
+    display: flex;
+    flex-grow: 1;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+/* Nav links styles */
+nav ul a {
+    color: #34332f;
+    margin-left: 3vw;
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Contact button styles */
+.contact-button {
+    padding: 14px 30px;
+    color: black;
+    background-color: white;
+    backdrop-filter: blur(25px);
+    text-decoration: none;
+    border-radius: 22px;
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+    display: inline-flex;
+    align-items: center;
+    margin-left: 2vw;
+    position: sticky;
+    top: 0; /* Ensure sticky positioning */
+}
+
+/* Last nav element styles */
+#last-nav-element {
+    display: inline-flex;
+    align-items: center;
+    margin-left: 2vw;
+}
+
+/* Current page link styles */
+.current-page {
+    color: #9e9e9e;
+}
+
+/* Hover styles for nav links */
+ul li a:hover {
+    color: #9e9e9e;
+}
+
+/* Hover styles for contact button */
+.contact-button:hover {
+    color: black !important;
+}
+
+/* Icon styles */
+i {
+    margin-right: 5px;
+    font-size: 2em;
+    display: flex;
+    align-items: center;
+    margin-left: -1vw;
+}
