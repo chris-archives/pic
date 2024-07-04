@@ -179,20 +179,3 @@ i {
     font-family: sans-serif;
 }
 
-#arrow-section .innovate {
-    position: absolute;
-    top: 55vh;
-    left: 8vw;
-}
-
-#arrow-section .design {
-    position: absolute;
-    top: 90vh;
-    right: 8vw;
-}
-
-#arrow-section .develop {
-    position: absolute;
-    top: 125vh;
-    left: 5vw;
-}
