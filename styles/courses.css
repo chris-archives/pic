@@ -163,60 +163,112 @@ i {
 }
 
 /* Arrow section styles */
-#arrow-section {
-    margin-top: -50vh;
+#roadmap {
+    margin-top: 2vh;
     display: flex;
     align-items: center;
     position: relative;
     flex-direction: column;
 }
 
-#arrow-section svg {
-    margin-top: -10vh;
+.svg-container {
     position: relative;
+    display: grid;
+}
+
+#roadmap .svg-container svg {
+    margin-top: -10vh;
+    position: absolute;
     height: 600px;
     width: 1600px;
     transform: rotate(90deg);
-    top: 70vh;
+    right: -770px;
+    top: 500px;
 }
 
-#arrow-section h1 {
+#roadmap h1 {
     font-size: 65px;
     font-family: sans-serif;
 }
 
 #innovate {
-    position: relative;
+    position: absolute;
     right: 350px;
     top: 480px;
 }
 
 #wireframe {
-    position: relative;
+    position: absolute;
     left: 430px;
     top: 580px;
 }
 
 #design {
-    position: relative;
+    position: absolute;
     right: 400px;
     top: 750px;
 }
 
 #code {
-    position: relative;
+    position: absolute;
     left: 430px;
     top: 1050px;
 }
 
 #debug {
-    position: relative;
+    position: absolute;
     right: 430px;
     top: 1180px;
 }
 
 #publish {
-    position: relative;
+    position: absolute;
     left: 430px;
     top: 1350px;
+}
+
+#roadmap .svg-container img {
+    width: 30px;
+    height: 50px;
+    transition: all 0.5s ease;
+}
+
+#pin-one {
+    position: absolute;
+    top: 70px;
+    right: 82px;
+}
+
+#pin-two {
+    position: absolute;
+    top: 235px;
+    left: 135px;
+}
+
+#pin-three {
+    position: absolute;
+    top: 485px;
+    right: 195px;
+}
+
+#pin-four {
+    position: absolute;
+    top: 825px;
+    left: 135px;
+}
+
+#pin-five {
+    position: absolute;
+    top: 1035px;
+    right: 195px;
+}
+
+#pin-six {
+    position: absolute;
+    top: 1285px;
+    left: 135px;
+}
+
+#roadmap .svg-container img:hover {
+    transform: scale(1.3);
 }
