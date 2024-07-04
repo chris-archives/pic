@@ -12,11 +12,20 @@
 /* Body styles */
 body {
     overflow-x: hidden;
+    height: 100%;
 }
 
 /* Main section height */
 #main-section {
     height: 85vh;
+    opacity: 0;
+    filter: blur(5px);
+    transition: opacity 1s ease, filter 0.5s ease;
+}
+
+#main-section.animate {
+    opacity: 1;
+    filter: blur(0);
 }
 
 /* General nav styles */
@@ -36,15 +45,14 @@ nav {
 /* Second nav specific styles */
 #navlist-two {
     height: 10vh;
-    width: 100vw;
+    width: 100%;
     background-color: rgba(255, 255, 255, 0.6);
-    margin-top: 10px;
     backdrop-filter: blur(20px);
-    position: sticky;
-    top: 0;
+    position: -webkit-sticky; /* Safari */
+    position: sticky !important;
+    top: 0 !important;
     z-index: 10;
     padding-top: 2vh;
-    margin-bottom: 2vh;
 }
 
 /* Brand styling */
@@ -85,8 +93,6 @@ nav ul a {
     display: inline-flex;
     align-items: center;
     margin-left: 2vw;
-    position: sticky;
-    top: 0; /* Ensure sticky positioning */
 }
 
 /* Last nav element styles */
@@ -136,12 +142,7 @@ i {
     font-size: 14.5px;
 }
 
-#main {
-    opacity: 0;
-    filter: blur(5px);
-    transition: opacity 1s ease, filter 0.5s ease;
-}
-
+/* Main section styles */
 #main.animate {
     opacity: 1;
     filter: blur(0);
@@ -167,6 +168,7 @@ i {
     text-align: center;
 }
 
+/* Arrow section styles */
 #arrow-section {
     display: flex;
     align-items: center;
@@ -174,8 +176,52 @@ i {
     flex-direction: column;
 }
 
+#arrow-section svg {
+    margin-top: -10vh;
+    position: relative;
+    height: 600px;
+    width: 1600px;
+    transform: rotate(90deg);
+    top: 70vh;
+}
+
 #arrow-section h1 {
-    font-size: 70px;
+    font-size: 65px;
     font-family: sans-serif;
 }
 
+#innovate {
+    position: relative;
+    right: 350px;
+    top: 480px;
+}
+
+#wireframe {
+    position: relative;
+    left: 430px;
+    top: 580px;
+}
+
+#design {
+    position: relative;
+    right: 400px;
+    top: 750px;
+}
+
+#code {
+    position: relative;
+    left: 430px;
+    top: 1050px;
+}
+
+#debug {
+    position: relative;
+    right: 430px;
+    top: 1180px;
+}
+
+#publish {
+    position: relative;
+    left: 430px;
+    top: 1350px;
+}
