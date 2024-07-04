@@ -10,22 +10,9 @@
 }
 
 /* Body styles */
-body {
+html, body {
     overflow-x: hidden;
     height: 100%;
-}
-
-/* Main section height */
-#main-section {
-    height: 85vh;
-    opacity: 0;
-    filter: blur(5px);
-    transition: opacity 1s ease, filter 0.5s ease;
-}
-
-#main-section.animate {
-    opacity: 1;
-    filter: blur(0);
 }
 
 /* General nav styles */
@@ -49,8 +36,8 @@ nav {
     background-color: rgba(255, 255, 255, 0.6);
     backdrop-filter: blur(20px);
     position: -webkit-sticky; /* Safari */
-    position: sticky !important;
-    top: 0 !important;
+    position: sticky;
+    top: 0;
     z-index: 10;
     padding-top: 2vh;
 }
@@ -143,6 +130,13 @@ i {
 }
 
 /* Main section styles */
+#main {
+    height: 85vh;
+    opacity: 0;
+    filter: blur(5px);
+    transition: opacity 1s ease, filter 0.5s ease;
+}
+
 #main.animate {
     opacity: 1;
     filter: blur(0);
@@ -170,6 +164,7 @@ i {
 
 /* Arrow section styles */
 #arrow-section {
+    margin-top: -50vh;
     display: flex;
     align-items: center;
     position: relative;

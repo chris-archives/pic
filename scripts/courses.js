@@ -1,5 +1,4 @@
 document.addEventListener("DOMContentLoaded", function() {
-    //IntersectionObserver for Main
     const mainPageObserver = new IntersectionObserver((entries) => {
         entries.forEach((entry) => {
             if (entry.isIntersecting) {
@@ -7,7 +6,7 @@ document.addEventListener("DOMContentLoaded", function() {
             } else {
                 entry.target.classList.remove('animate');
             }
-            });
+        });
     }, {
         root: null,
         rootMargin: '0px',
