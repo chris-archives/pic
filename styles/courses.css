@@ -186,51 +186,68 @@ i {
     top: 500px;
 }
 
-#roadmap h1 {
+#roadmap .svg-container h1 {
     font-size: 65px;
     font-family: sans-serif;
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateY(30vh);
+    transition: opacity 1s ease, filter 0.5s ease, transform 0.5s ease;
+}
+
+#roadmap .svg-container h1.animate {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateY(0px);
 }
 
 #innovate {
     position: absolute;
-    right: 350px;
-    top: 480px;
+    right: 280px;
+    top: 80px;
 }
 
 #wireframe {
     position: absolute;
-    left: 430px;
-    top: 580px;
+    left: 250px;
+    top: 270px;
 }
 
 #design {
     position: absolute;
-    right: 400px;
-    top: 750px;
+    right: 360px;
+    top: 500px;
 }
 
 #code {
     position: absolute;
-    left: 430px;
-    top: 1050px;
+    left: 300px;
+    top: 850px;
 }
 
 #debug {
     position: absolute;
-    right: 430px;
-    top: 1180px;
+    right: 350px;
+    top: 1050px;
 }
 
 #publish {
     position: absolute;
-    left: 430px;
-    top: 1350px;
+    left: 300px;
+    top: 1300px;
 }
 
 #roadmap .svg-container img {
     width: 30px;
     height: 50px;
-    transition: all 0.5s ease;
+    opacity: 0;
+    filter: blur(2px);
+    transition: all 0.8s ease;
+}
+
+#roadmap .svg-container img.animate {
+    opacity: 1;
+    filter: blur(0);
 }
 
 #pin-one {
