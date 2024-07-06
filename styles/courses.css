@@ -162,6 +162,19 @@ i {
     text-align: center;
 }
 
+#main h6 {
+    font-size: 25px;
+    color: #a2a2a2;
+    line-height: 28px;
+    font-family: sans-serif;
+    font-weight: 300;
+    margin-top: 50px;
+    width: 60vw;
+    margin-left: 20vw;
+    margin-right: 20vw;
+    text-align: center;
+}
+
 /* Arrow section styles */
 #roadmap {
     margin-top: 2vh;
@@ -287,4 +300,76 @@ i {
     font-weight: 300;
     position: absolute;
     width: 25vw;
+}
+
+#innovate {
+    right: 280px;
+    top: 80px;
+}
+
+#wireframe {
+    left: 250px;
+    top: 270px;
+}
+
+#design {
+    right: 360px;
+    top: 500px;
+}
+
+#code {
+    left: 300px;
+    top: 850px;
+}
+
+#debug {
+    right: 350px;
+    top: 1050px;
+}
+
+#publish {
+    left: 300px;
+    top: 1300px;
+}
+
+#innovate-text {
+    right: 200px;
+    top: 160px;
+    opacity: 0;
+    transition: opacity 0.6s ease;
+}
+
+#wireframe-text {
+    left: 250px;
+    top: 350px;
+    opacity: 0;
+    transition: opacity 0.6s ease;
+}
+
+#design-text {
+    right: 245px;
+    top: 580px;
+    opacity: 0;
+    transition: opacity 0.6s ease;
+}
+
+#code-text {
+    left: 245px;
+    top: 930px;
+    opacity: 0;
+    transition: opacity 0.6s ease;
+}
+
+#debug-text {
+    right: 250px;
+    top: 1130px;
+    opacity: 0;
+    transition: opacity 0.6s ease;
+}
+
+#publish-text {
+    left: 245px;
+    top: 1380px;
+    opacity: 0;
+    transition: opacity 0.6s ease;
 }
