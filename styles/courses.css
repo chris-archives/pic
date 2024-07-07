@@ -367,3 +367,23 @@ i {
     position: relative;
     top: 1600px;
 }
+
+#programs h6 {
+    font-size: 25px;
+    color: #a2a2a2;
+    line-height: 28px;
+    font-family: sans-serif;
+    font-weight: 300;
+    margin-left: 20vw;
+    margin-top: 60px;
+    margin-right: 20vw;
+    position: relative;
+    text-align: center;
+    top: 1600px;
+}
+
+#spacer {
+    height: 100px;
+    position: relative;
+    top: 1620px;
+}
