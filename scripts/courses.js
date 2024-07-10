@@ -1,3 +1,6 @@
+// Registering ScrollTo plugin from GSAP
+gsap.registerPlugin(ScrollToPlugin)
+
 document.addEventListener("DOMContentLoaded", function() {
     //IntersectionObserver for Main section
     const mainPageObserver = new IntersectionObserver((entries) => {
