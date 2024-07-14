@@ -217,22 +217,34 @@ i {
 #roles-section #grid-container {
     display: flex;
     flex-direction: row;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-left: 14px;
+    padding-right: 25px;
+    margin: 0px;
 }
 
 #roles-section .cards {
-    height: 65vh;
+    height: 440px;
     border: 1px solid #000;
-    width: 300px;
+    width: 335px;
     margin-left: 1vw;
     margin-top: 3vh;
+    padding-left: 30px;
+    padding-right: 30px;
 }
 
-#roles-section .card p {
+#roles-section .cards p {
     text-align: center;
+    margin-top: 30px;
+    color: #a2a2a2;
+    line-height: 28px;
+    font-family: sans-serif;
+    font-weight: 300;
+    font-size: 16px;
 }
 
-#roles-section #grid-container .card h1 {
+#roles-section .cards h1 {
     text-align: center;
+    margin-top: 60px;
+    font-family: sans-serif;
+
 }
