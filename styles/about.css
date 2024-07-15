@@ -268,4 +268,13 @@ i {
 
 #team-section .flex-container2 {
     display: flex;
+    flex-wrap: wrap;
+
+}
+
+#team-section img {
+    height: 320px;
+    width: 320px;
+    object-fit: cover;
+    margin-left: 5vw;
 }
