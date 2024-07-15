@@ -199,8 +199,11 @@ i {
     border-radius: 30px;
     text-transform: uppercase;
     transition: all .5s ease;
-    margin-top: 2vh;
-    margin-left: 42vw;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin-top: 5vh;
 }
 
 /* Ensure link inside button remains white */
@@ -218,12 +221,11 @@ i {
     background: transparent;
 }
 
-#roles-section #flex-container {
+#roles-section #cards-container {
     display: flex;
-    flex-direction: row;
-    padding-left: 14px;
-    padding-right: 25px;
+    justify-content: center;
     margin: 0px;
+    flex-wrap: wrap;
 }
 
 #roles-section .cards {
