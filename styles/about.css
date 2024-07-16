@@ -255,17 +255,19 @@ i {
 }
 
 #team-section h1 {
-    margin-top: 10vh;
+    margin-top: 8vh;
     text-align: center;
     font-size: 5em;
     font-weight: 700;
+    margin-bottom: -10vh;
 }
 
 #team-section h2 {
-    margin-top: 3vh;
+    margin-top: 15vh;
     text-align: center;
     font-size: 3em;
     font-weight: 700;
+    margin-bottom: 5vh;
 }
 
 #team-section .cards-container2 {
@@ -279,5 +281,36 @@ i {
     height: 320px;
     width: 320px;
     object-fit: cover;
+}
+
+#team-section .cards2 {
+    height: 440px;
+    width: 410px;
+    margin-left: 1vw;
+    margin-top: 3vh;
+    padding-left: 30px;
+    padding-right: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2vh;
+
+}
+
+#team-section .cards2 p {
+    text-align: center;
+    color: #000;
+    font-family: sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 20px
+}
+
+#team-section .cards2 h3 {
+    text-align: center;
+    font-family: sans-serif;
+    margin-bottom: 20px;
+    margin-top: 20px;
 }
 
