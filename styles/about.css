@@ -185,6 +185,17 @@ i {
     margin-top: 2px;
 }
 
+#animation-div {
+    opacity: 0;
+    filter: blur(5px);
+    transition: opacity 1s ease, filter 0.5s ease;
+}
+
+#animation-div.animate {
+    opacity: 1;
+    filter: blur(0);
+}
+
 /* Specific styles for hero section buttons */
 #roles-section button {
     font-family: 'Roboto', sans-serif;
@@ -236,6 +247,16 @@ i {
     margin-top: 3vh;
     padding-left: 30px;
     padding-right: 30px;
+    filter: blur(5px);
+    opacity: 0;
+    transform: translateX(100vh);
+    transition: transform 1s ease, opacity 1s ease;
+}
+
+#roles-section .cards.animate {
+    opacity: 1;
+    filter: blur(0px);
+    transform: translateX(0);
 }
 
 #roles-section .cards p {
