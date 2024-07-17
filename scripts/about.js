@@ -59,4 +59,21 @@ document.addEventListener("DOMContentLoaded", function() {
 
     const roleCards = document.querySelectorAll('#cards-container');
     roleCards.forEach((el) => roleCardsObserver.observe(el));
+
+    const teamCardsObserver = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('animate');
+            } else {
+                entry.target.classList.remove('animate');
+            }
+        });
+    }, {
+        root: null,
+        rootMargin: '0px',
+        threshold: 0.1
+    });
+    
+    const teamCards = document.querySelectorAll('#team-section .cards2');
+    teamCards.forEach((el) => teamCardsObserver.observe(el));
 });
