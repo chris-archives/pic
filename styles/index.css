@@ -492,48 +492,21 @@ i {
 }
 
 /* Design arrows */
-#design-arrow1 {
-    width: 200px;
-    height: 300px;
+svg {
+    height: 950px;
+    width: 1040px;
     transform: rotate(90deg);
     position: absolute;
-    top: -365px;
-    right: -25px;
-}
-
-#design-arrow2 {
-    width: 500px;
-    height: 400px;
-    transform: rotate(270deg);
-    position: absolute;
-    top: -135px;
-    left: -118px;
-}
-
-#design-arrow3 {
-    width: 500px;
-    height: 400px;
-    transform: rotate(90deg);
-    position: absolute;
-    top: 163px;
-    left: -415px;
-}
-
-#design-arrow4 {
-    width: 200px;
-    height: auto;
-    transform: rotate(270deg);
-    position: absolute;
-    top: 516px;
-    right: -150px;
+    bottom: -700px;
+    left: -558px;
 }
 
 #final-arrow {
     position: absolute;
-    width: 190px;
+    width: 205px;
     height: auto;
     top: 720px;
-    left: -134px;
+    left: -120.5px;
 }
 
 /* Description section styles */
