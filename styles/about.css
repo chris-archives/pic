@@ -55,6 +55,68 @@ nav {
     margin-bottom: 2vh;
 }
 
+#hamburger {
+    z-index: 99;
+    display: none;
+}
+
+.bar {
+    height: 2px;
+    width: 28px;
+    background: #000;
+    margin: 5px 0;
+    opacity: 0.8;
+    transition: transform 0.3s ease-in-out;
+}
+
+.hamburger-animation .bar:nth-child(1) {
+    transform: translateY(7px) rotate(45deg);
+}
+
+.hamburger-animation .bar:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburger-animation .bar:nth-child(3) {
+    transform: translateY(-7px) rotate(-45deg);
+}
+
+.responsive-sidebar-toggle {
+    transform: translateX(0px) !important;
+}
+
+.responsive-sidebar {
+    height: 100vh;
+    width: 100vw;
+    background-color: transparent;
+    backdrop-filter: blur(30px);
+    z-index: 99;
+    position: absolute;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translateY(-100vh);
+    transition: all 0.5s ease-in-out;
+}
+
+.responsive-sidebar ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.responsive-sidebar ul li a{
+    font-size: 38px;
+    color: #34332f;
+    font-family: Roboto;
+    transition: all 0.5s ease;
+}
+
+.responsive-sidebar ul li {
+    margin-top: 12px;
+}
+
 /* Brand styling */
 .brand {
     color: black;
@@ -345,4 +407,54 @@ i {
     margin-bottom: 20px;
     margin-top: 20px;
 }
+
+@media (max-width: 1120px) {
+
+    /* main section paragraph styling */ 
+    #main-section p {
+        font-size: 25px;
+        width: 80vw;
+    }
+}
+
+@media (max-width: 960px) {
+    #main-section h1 {
+        font-size: 5em;
+}
+
+    #main-section p {
+        font-size: 22px;
+        width: 80vw;
+    }
+}
+
+@media (max-width: 640px) {
+    #main-section h1 {
+        font-size: 4em;
+}
+
+    #main-section p {
+        font-size: 20px;
+        width: 80vw;
+    }
+}
+
+@media (max-width: 790px) {
+    #navlist-two {
+        display: none;
+    }
+
+    #main-section h1 {
+        padding-top: 6vh;
+    }
+
+    #navlist-one ul li{
+        display: none;
+    }
+
+    #hamburger {
+        display: block !important;
+    }
+}
+
 

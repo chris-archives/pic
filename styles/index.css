@@ -561,3 +561,19 @@ svg {
     z-index: 2;
     background-color: #fefefe;
 }
+
+/* Media Queries */
+@media (max-width: 1422px) {
+    #window-close div {
+        width: 185px;
+        height: 80px;
+    }
+}
+
+@media (max-width: 1190px) {
+
+/* Hero section paragraph styling */
+.hero-section p {
+    width: 60vw;
+}
+}
