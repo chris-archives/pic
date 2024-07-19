@@ -423,4 +423,8 @@ i {
         font-size: 20px;
         width: 80vw;
 }
+
+#programs div {
+    height: 30px;
+}
 }
