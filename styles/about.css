@@ -88,8 +88,7 @@ nav {
 .responsive-sidebar {
     height: 100vh;
     width: 100vw;
-    background-color: transparent;
-    backdrop-filter: blur(30px);
+    background-color: #fff;
     z-index: 99;
     position: absolute;
     top: 0;
@@ -410,7 +409,7 @@ i {
 
 @media (max-width: 1120px) {
 
-    /* main section paragraph styling */ 
+    /* main section paragraph styling */
     #main-section p {
         font-size: 25px;
         width: 80vw;
