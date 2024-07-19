@@ -427,24 +427,13 @@ i {
     }
 }
 
-@media (max-width: 640px) {
-    #main-section h1 {
-        font-size: 4em;
-}
-
-    #main-section p {
-        font-size: 20px;
-        width: 80vw;
-    }
-}
-
 @media (max-width: 790px) {
     #navlist-two {
         display: none;
     }
 
     #main-section h1 {
-        padding-top: 6vh;
+        padding-top: 15px;
     }
 
     #navlist-one ul li{
@@ -456,4 +445,14 @@ i {
     }
 }
 
+@media (max-width: 640px) {
+    #main-section h1 {
+        font-size: 4em;
+}
+
+    #main-section p {
+        font-size: 20px;
+        width: 80vw;
+}
+}
 

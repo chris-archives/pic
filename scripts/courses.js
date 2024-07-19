@@ -2,6 +2,7 @@
 gsap.registerPlugin(ScrollToPlugin);
 
 document.addEventListener("DOMContentLoaded", function() {
+
     // IntersectionObserver for Main section
     const mainPageObserver = new IntersectionObserver((entries) => {
         entries.forEach((entry) => {
@@ -17,7 +18,7 @@ document.addEventListener("DOMContentLoaded", function() {
         threshold: 0.1
     });
 
-    const mainPage = document.querySelectorAll('#main');
+    const mainPage = document.querySelectorAll('#main-section');
     mainPage.forEach((el) => mainPageObserver.observe(el));
 
     // IntersectionObserver for Roadmap section's headings
@@ -95,4 +96,12 @@ document.addEventListener("DOMContentLoaded", function() {
 
     const programsSection = document.querySelectorAll('.programs-text');
     programsSection.forEach((el) => programTextObserver.observe(el));
+
+    const hamburgerMenu = document.querySelector('#hamburger');
+    const sideBar = document.querySelector('.responsive-sidebar');
+
+    hamburgerMenu.addEventListener('click', () => {
+        sideBar.classList.toggle('responsive-sidebar-toggle');
+        hamburgerMenu.classList.toggle('hamburger-animation');
+    });
 });
