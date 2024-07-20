@@ -377,6 +377,52 @@ i {
     }
 }
 
+@media (max-width: 1170px) {
+    #roadmap .svg-container svg {
+        margin-top: -5vh;
+        height: 400px;
+        width: 1400px;
+        right: -700px;
+    }
+
+    #roadmap .svg-container h1 {
+        font-size: 55px;
+    }
+
+    #innovate { right: 170px; top: 95px; }
+    #wireframe { left: 195px; top: 270px; }
+    #design { right: 235px; top: 470px; }
+    #code { left: 220px; top: 790px; }
+    #debug { right: 250px; top: 955px; }
+    #publish { left: 225px; top: 1200px; }
+
+    #pin-one { top: 80px; right: 32px; }
+    #pin-two { top: 235px; left: 105px; }
+    #pin-three { top: 445px; right: 105px; }
+    #pin-four { top: 758px; left: 105px; }
+    #pin-five { top: 935px; right: 105px; }
+    #pin-six { top: 1138px; left: 105px; }
+
+    #innovate-text { right: 120px; top: 160px; }
+    #wireframe-text { left: 200px; top: 350px; }
+    #design-text { right: 155px; top: 555px; }
+    #code-text { left: 220px; top: 860px; }
+    #debug-text { right: 160px; top: 1030px; }
+    #publish-text { left: 225px; top: 1270px; }
+
+    #programs div {
+        height: 55px;
+    }
+
+    #roadmap .svg-container p {
+        font-size: 22px;
+    }
+
+    #programs {
+        margin-top: -200px;
+    }
+}
+
 @media (max-width: 960px) {
     #main-section h1, #programs h1  {
         font-size: 5em;
@@ -385,6 +431,44 @@ i {
     #main-section p, #main-section h6, #programs p {
         font-size: 22px;
         width: 80vw;
+    }
+
+    #roadmap .svg-container svg {
+        margin-top: -18vh;
+        height: 350px;
+        width: 1350px;
+        right: -670px;
+    }
+
+    #roadmap img {
+        display: none;
+    }
+
+    #roadmap .svg-container h1 {
+        font-size: 45px;
+    }
+
+    #roadmap .svg-container p {
+        font-size: 20px;
+        opacity: 1;
+    }
+
+    #innovate { right: 120px; top: -10px; }
+    #wireframe { left: 145px; top: 150px; }
+    #design { right: 205px; top: 350px; }
+    #code { left: 200px; top: 650px; }
+    #debug { right: 190px; top: 815px; }
+    #publish { left: 205px; top: 1000px; }
+    
+    #innovate-text { right: 100px; top: 50px; }
+    #wireframe-text { left: 150px; top: 220px; }
+    #design-text { right: 145px; top: 420px; }
+    #code-text { left: 195px; top: 710px; }
+    #debug-text { right: 140px; top: 890px; }
+    #publish-text { left: 205px; top: 1060px; }
+
+    #programs {
+        margin-top: -300px;
     }
 }
 
@@ -410,8 +494,31 @@ i {
     }
 
     #programs div {
-        height: 45px;
+        height: 25px;
     }
+
+    #roadmap .svg-container h1 {
+        font-size: 32px;
+    }
+
+    #roadmap .svg-container p {
+        font-size: 18px;
+        opacity: 1;
+    }
+
+    #innovate { right: 120px; top: -10px; }
+    #wireframe { left: 140px; top: 150px; }
+    #design { right: 180px; top: 350px; }
+    #code { left: 150px; top: 650px; }
+    #debug { right: 170px; top: 815px; }
+    #publish { left: 140px; top: 1000px; }
+    
+    #innovate-text { right: 100px; top: 50px; }
+    #wireframe-text { left: 140px; top: 220px; }
+    #design-text { right: 125px; top: 420px; }
+    #code-text { left: 145px; top: 710px; }
+    #debug-text { right: 120px; top: 890px; }
+    #publish-text { left: 140px; top: 1060px; }
 }
 
 @media (max-width: 640px) {
@@ -425,6 +532,36 @@ i {
 }
 
 #programs div {
-    height: 30px;
+    height: 5px;
 }
+
+#roadmap .svg-container svg {
+    margin-top: -4vh;
+    height: 200px;
+    width: 1300px;
+    right: -655px;
+}
+
+#roadmap .svg-container h1 {
+    font-size: 22px;
+}
+
+#roadmap .svg-container p {
+    font-size: 15px;
+    opacity: 1;
+}
+
+#innovate { right: 80px; top: -10px; }
+#wireframe { left: 80px; top: 150px; }
+#design { right: 100px; top: 350px; }
+#code { left: 100px; top: 650px; }
+#debug { right: 100px; top: 815px; }
+#publish { left: 90px; top: 1000px; }
+
+#innovate-text { right: 70px; top: 30px; }
+#wireframe-text { left: 80px; top: 200px; }
+#design-text { right: 75px; top: 400px; }
+#code-text { left: 95px; top: 690px; }
+#debug-text { right: 70px; top: 870px; }
+#publish-text { left: 90px; top: 1040px; }
 }

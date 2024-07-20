@@ -10,8 +10,9 @@
 }
 
 /* Body styles */
-body {
+body,html {
     overflow-x: hidden;
+    height: 100%;
 }
 
 /* Main section height */
@@ -417,13 +418,21 @@ i {
 }
 
 @media (max-width: 960px) {
-    #main-section h1 {
+    #main-section h1{
         font-size: 5em;
 }
 
     #main-section p {
         font-size: 22px;
         width: 80vw;
+    }
+
+    #team-section h1 {
+        font-size: 5em;
+    }
+
+    #team-section h2 {
+        font-size: 4em;
     }
 }
 
@@ -443,6 +452,14 @@ i {
     #hamburger {
         display: block !important;
     }
+
+    #team-section h1 {
+        font-size: 3.5em;
+    }
+
+    #team-section h2 {
+        font-size: 3em;
+    }
 }
 
 @media (max-width: 640px) {
@@ -453,6 +470,14 @@ i {
     #main-section p {
         font-size: 20px;
         width: 80vw;
+}
+
+#team-section h1 {
+    font-size: 3em;
+}
+
+#team-section h2 {
+    font-size: 2.5em;
 }
 }
 
