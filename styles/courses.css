@@ -446,6 +446,7 @@ i {
 
     #roadmap .svg-container h1 {
         font-size: 45px;
+        transform: translateY(0px) !important;
     }
 
     #roadmap .svg-container p {
@@ -499,6 +500,7 @@ i {
 
     #roadmap .svg-container h1 {
         font-size: 32px;
+        transform: translateY(0px) !important;
     }
 
     #roadmap .svg-container p {
@@ -544,6 +546,7 @@ i {
 
 #roadmap .svg-container h1 {
     font-size: 22px;
+    transform: translateY(0px) !important;
 }
 
 #roadmap .svg-container p {
