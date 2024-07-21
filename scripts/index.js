@@ -2,6 +2,15 @@
 gsap.registerPlugin(ScrollTrigger);
 
 document.addEventListener("DOMContentLoaded", function() {
+
+    const hamburgerMenu = document.querySelector('#hamburger');
+    const sideBar = document.querySelector('.responsive-sidebar');
+
+    hamburgerMenu.addEventListener('click', () => {
+        sideBar.classList.toggle('responsive-sidebar-toggle');
+        hamburgerMenu.classList.toggle('hamburger-animation');
+    });
+    
     //IntersectionObserver for Main
     const mainPageObserver = new IntersectionObserver((entries) => {
         entries.forEach((entry) => {

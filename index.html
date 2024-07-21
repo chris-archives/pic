@@ -13,6 +13,14 @@
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
 </head>
 <body>
+    <aside class="responsive-sidebar">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="courses.html">Courses</a></li>
+            <li><a class="current-page" href="about.html">About</a></li>
+        </ul>
+    </aside>
+
     <nav id="navlist-one">
         <a class="brand" href="index.html">POWER IN CODE</a>
         <ul>
@@ -21,6 +29,11 @@
             <li><a href="about.html">About</a></li>
             <li><a href="mailto:powerincode@gmail.com" target="_blank" class="contact-button">Contact</a></li>
             <li id="last-nav-element"><i class="ri-global-line"></i>PA</li>
+            <div id="hamburger">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
         </ul>
     </nav>
 
@@ -34,17 +47,15 @@
     </nav>
 
     <section id="main-section">
-        <section class="hero-section">
             <h1>Love for coding<br>&nbsp;begins here</h1>
             <p>Welcome to Power in Code, a citywide organization that aims to inspire the youths of Philly,
                 guiding students in this new world of technology and showing them what their future careers can await in computer science.
                 At Power In Code, we aspire to provide free and accessible coding lessons to youths all throughout Philadelphia.
             </p>
             <div>
-                <button><a href="about.html">LEARN MORE</a></button>
+                <button id ="learn-more-button"><a href="about.html">LEARN MORE</a></button>
                 <button id="contact-button"><a href="mailto:powerincode@gmail.com" target="_blank">PARTNER WITH US</a></button>
             </div>
-        </section>
     </section>
 
     <section id="testimony">

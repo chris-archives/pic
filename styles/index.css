@@ -59,6 +59,66 @@ nav {
     padding-top: 2vh;
     margin-bottom: 2vh;
 }
+#hamburger {
+    z-index: 99;
+    display: none;
+}
+
+.bar {
+    height: 2px;
+    width: 28px;
+    background: #000;
+    margin: 5px 0;
+    opacity: 0.8;
+    transition: transform 0.3s ease-in-out;
+}
+
+.hamburger-animation .bar:nth-child(1) {
+    transform: translateY(7px) rotate(45deg);
+}
+
+.hamburger-animation .bar:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburger-animation .bar:nth-child(3) {
+    transform: translateY(-7px) rotate(-45deg);
+}
+
+.responsive-sidebar-toggle {
+    transform: translateX(0px) !important;
+}
+
+.responsive-sidebar {
+    height: 100vh;
+    width: 100vw;
+    background-color: #fff;
+    z-index: 99;
+    position: absolute;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translateY(-100vh);
+    transition: all 0.5s ease-in-out;
+}
+
+.responsive-sidebar ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.responsive-sidebar ul li a{
+    font-size: 38px;
+    color: #34332f;
+    font-family: Roboto;
+    transition: all 0.5s ease;
+}
+
+.responsive-sidebar ul li {
+    margin-top: 12px;
+}
 
 /* Brand styling */
 .brand {
@@ -149,14 +209,14 @@ i {
     font-size: 14.5px;
 }
 
-/* Hero section styling */
-.hero-section {
+/* main section styling */
+#main-section {
     flex: 1;
     width: 55vw;
 }
 
-/* Hero section heading styling */
-.hero-section h1 {
+/* Main section heading styling */
+#main-section h1 {
     font-size: 6em;
     font-weight: 700;
     margin-left: 7vw;
@@ -165,8 +225,8 @@ i {
     width: 70vw;
 }
 
-/* Hero section paragraph styling */
-.hero-section p {
+/* Main section paragraph styling */
+#main-section p {
     font-size: 25px;
     color: #a2a2a2;
     margin-top: 40px;
@@ -177,7 +237,7 @@ i {
 }
 
 /* Specific styles for hero section buttons */
-.hero-section button {
+#main-section #learn-more-button {
     font-family: 'Roboto', sans-serif;
     display: inline-block;
     color: white; /* Ensure button text color is white */
@@ -194,20 +254,36 @@ i {
     margin-left: 7vw;
 }
 
-/* Ensure link inside button remains white */
-.hero-section button a,
-.hero-section button a:visited {
-    color: white !important; /* Add !important to ensure it overrides other styles */
+#main-section #contact-button {
+    font-family: 'Roboto', sans-serif;
+    display: inline-block;
+    color: black; /* Ensure button text color is white */
+    border: 1px solid black;
+    background: transparent;
+    padding: 12px 30px;
+    line-height: 1.4;
+    font-size: 14px;
+    font-weight: 500;
+    border-radius: 30px;
+    text-transform: uppercase;
+    transition: all .5s ease;
+    margin-top: 5vh;
+    margin-left: 3vw;
 }
 
-.hero-section button:hover a,
-.hero-section button:hover a:visited {
+#main-section #learn-more-button a,
+#main-section #learn-more-button a:visited {
+    color: white; /* Change link color to black on hover */
+}
+
+#main-section button:hover a,
+#main-section button:hover a:visited {
     color: black !important; /* Change link color to black on hover */
 }
 
 /* Hover effect */
-.hero-section button:hover {
-    background: transparent;
+#main-section button:hover {
+    background: transparent !important;
     border: 1px solid rgb(10, 0, 0);
     transform: translateX(10px);
     color: black;
@@ -224,6 +300,10 @@ i {
 #contact-button a,
 #contact-button a:visited {
     color: black !important; /* Or the color you want the button text to be */
+}
+
+#main-section div {
+    width: 100vw;
 }
 
 /* Intro skill section styling */
@@ -562,18 +642,69 @@ svg {
     background-color: #fefefe;
 }
 
-/* Media Queries */
-@media (max-width: 1422px) {
-    #window-close div {
-        width: 185px;
-        height: 80px;
+@media (max-width: 1120px) {
+
+    /* main section paragraph styling */
+    #main-section p, #skills-section p, #skills-section h4 {
+        font-size: 25px;
+        width: 80vw;
+    }
+
+    #skills-section h1 {
+        width: 80vw;
     }
 }
 
-@media (max-width: 1190px) {
-
-/* Hero section paragraph styling */
-.hero-section p {
-    width: 60vw;
+@media (max-width: 960px) {
+    #main-section h1, #skills-section h1 {
+        font-size: 4em;
+        line-height: 55px;
 }
+
+    #main-section p, #skills-section h4, #skills-section p {
+        font-size: 20px;
+        width: 80vw;
+    }
+
+    #skill-section p {
+        margin-top: 35px;
+    }
+}
+
+@media (max-width: 790px) {
+    #navlist-two {
+        display: none;
+    }
+
+    #main-section h1 {
+        padding-top: 15px;
+        width: 75vw;
+    }
+
+    #navlist-one ul li{
+        display: none;
+    }
+
+    #hamburger {
+        display: block !important;
+    }
+
+    .skills-text {
+        transform: translateY(0) !important;
+    }
+}
+
+@media (max-width: 640px) {
+    #main-section h1, #skills-section h1 {
+        font-size: 3.5em;
+}
+
+    #main-section p, #skills-section p, #skills-section h4 {
+        font-size: 18px;
+        width: 80vw;
+}
+
+    #skills-section h4 {
+        margin-top: 15vh;
+    }
 }
