@@ -384,7 +384,7 @@ i {
     margin-bottom: 2vh;
     opacity: 0;
     filter: blur(5px);
-    transition: opacity 1s ease, filter 0.5s ease;
+    transition: opacity 0.5s ease, filter 0.5s ease;
 }
 
 #team-section .cards2.animate {
@@ -434,6 +434,10 @@ i {
     #team-section h2 {
         font-size: 4em;
     }
+
+    #roles-section .cards {
+        transform: translateX(0px);
+    }
 }
 
 @media (max-width: 790px) {
@@ -460,6 +464,10 @@ i {
     #team-section h2 {
         font-size: 3em;
     }
+
+    #roles-section .cards {
+        transform: translateX(0px);
+    }
 }
 
 @media (max-width: 640px) {
@@ -478,6 +486,10 @@ i {
 
 #team-section h2 {
     font-size: 2.5em;
+}
+
+#roles-section .cards {
+    transform: translateX(0px);
 }
 }
 
