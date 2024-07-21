@@ -15,8 +15,9 @@
 }
 
 /* Body styles */
-body {
+html, body {
     overflow-x: hidden;
+    height: 100%;
 }
 
 /* Main section height */

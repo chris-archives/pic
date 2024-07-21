@@ -10,7 +10,7 @@
 }
 
 /* Body styles */
-body,html {
+html, body {
     overflow-x: hidden;
     height: 100%;
 }
